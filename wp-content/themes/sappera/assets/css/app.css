@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body { font-family: 'Source Sans Pro', sans-serif; font-size: 13px; line-height: 18px; color:#333; font-weight: 400; }
+.container { position: relative; z-index: 10000; }
+h1 {}
+h2 { font-size: 35px; font-weight: 200; }
+h3 {}
+h4 { font-size: 20px; font-weight: 300; line-height: 24px; }
+h5 { font-size: 20px; font-weight: 400; line-height: 24px; }
+p {}
+.yellow { color: #d7df21; }
+.white { color: #FFF; }
+.light-grey { color: #CCC; }
+.grey { color: #999; }
+strong { text-transform: uppercase; font-weight: 600; }
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+.banner { background: #FFF; margin-top:28px; }
+.banner .logo { border-bottom: 1px solid #CCC; }
+.navbar-static-top .navbar-inner { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; background: #FFF; text-transform: uppercase; }
+.nav li { height: 65px; line-height: 45px; }
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+section { height: 765px; position: relative; overflow: hidden; }
+section .sec_background { position: absolute; width:100%; z-index: 10; }
+section .sec_background.top { top: 0; }
+section .sec_background.left { left: 0; text-align: left; }
+section .sec_background.right { right: 0; text-align: right; }
+section .sec_background.bottom { bottom: 0; }
+section .sec_background img { width: 100%; }
+
+section#sappera { height: 481px; padding-top: 78px; }
+section#about { background: url('../img/d7df21.jpg') top left repeat; height: 713px; padding-top: 52px; }
+section#strategy { background: #000; height: 670px; padding-top: 95px; }
+section#business { height: 687px; padding-top: 78px; }
+section#business hr { border: 1px solid #CCC; }
+section#sustain { background: #CCC; height: 670px; padding-top: 95px; }
+section#sustain h2 { margin-top: 18px; }
+section#sustain hr { margin-top: 10px; }
+section#contact { height:428px; padding-top: 82px; background: url('../img/d7df21.jpg') top left repeat; }
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.scroll_down { text-transform: uppercase; color: #FFF; position: absolute; z-index: 100; bottom: 40px; left: 50%; margin-left: -40px; }
+.scroll_down a { color: #FFF; }
+.scroll_down a:hover { text-decoration: none; }
+.scroll_down a:hover i { color: #d7df21; } 
+.scroll_down a i { font-size: 6em; display: block; text-align: center; line-height: 1px; }
+
+.strSubHead { margin: 30px 0 60px 0; }
+.busImg { padding-top: 25px; }
+.busText { padding-top: 80px; }
+.contact { margin-top: 15px; }
+
+.back_to_top { position: absolute; z-index: 100; bottom: 10px; left: 50%; margin-left: -40px; }
+.back_to_top a { color: #000; font-size: 12px;}
+.back_to_top a:hover, .back_to_top a:hover i { color: #000; text-decoration: none; }
+.back_to_top a i { color: #FFF; font-size: 6em; display: block; text-align: center; line-height: 35px; }
+
+/* ==========================================================================
+   Contact form
+   ========================================================================== */
+label { display: inline-block; height: 20px; line-height: 28px; }
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { width: 266px; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; }
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button { width: 140px; height: 29px; line-height: 24px; background: transparent; border: 1px solid #FFF; text-transform: uppercase; color: #FFF; font-size: 13px; font-weight: 400; margin: 15px 0 0 1px; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer { background: #000; padding: 30px 0 55px 0; position: relative; }
+footer .large-logo { position: absolute; bottom: 400px; left: 100%; margin-left: -713px; z-index: 1000; }
+footer .large-logo img { width: 713px; height: 975px; }
+footer .copy { margin-top: 80px; color: #FFF; font-size: 10px; font-weight: 300; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 767px){
+    /* Base */
+    body { padding-left: 0px; padding-right: 0px; }
+    
+    /* Header */
+    .banner { margin: 0px; padding: 0 20px; }
+    
+    /* Sections */
+    section, section#sappera, section#about, section#strategy, section#business, section#sustain, section#contact { height:auto; padding: 25px 20px; }
+    section#about { padding-bottom: 120px; }
+    
+    /* Content */
+    .strSubHead { margin: 10px 0 15px 0; }
+    .busImg { padding-top: 0px; }
+    .busText { padding-top: 0px; }
+    .contact { margin-top: 0px; }
+    .back_to_top { left: 100%; margin-left: -70px; }
+    
+    /* Footer */
+    footer { padding: 20px; text-align: center; }
+    footer .copy { margin-top: 0px; }    
+}
